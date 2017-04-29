@@ -1,0 +1,211 @@
+html{
+  font-size:18px;
+  color:white;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: helvetica;
+
+}
+.width960{
+  width:960px;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  background-color: black;
+  width:100%;
+  align-items: center;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+  justify-content: center;
+
+}
+.logo img{
+  height:1.5rem;
+  padding-left: .5rem;
+}
+.logo h2{
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.mainbanner{
+  background-image:url("../images/moto.jpeg");
+  background-size: cover;
+  width:100%;
+  height: 25rem;
+  justify-content: center;
+  display: flex;
+
+}
+.bannertitle{
+  background-color: black;
+  width:20rem;
+  padding:2rem 0rem 2rem 3rem;
+  margin-top: 9rem;
+}
+.bannertitle h2{
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: .25rem;
+}
+.bannertitle h1{
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 0;
+}
+.navbar{
+  background-color: firebrick;
+  display: flex;
+  width:100%;
+  padding-top:.75rem;
+  padding-bottom:.75rem;
+  justify-content: center;
+
+}
+.menu{
+  display: none;
+  width: 100%;
+  justify-content: center;
+}
+.options{
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.productgrid{
+  display: flex;
+  width:960px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  justify-content: space-between;
+
+}
+.penstuff,
+.watchstuff,
+.sunglassesstuff{
+  width: 30%;
+  border: 4px solid black;
+
+  display: inline-block;
+  text-align: center;
+
+}
+.pen,
+.watch{
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.glasses{
+  height:5rem;
+  padding-top:4rem;
+  padding-bottom:4rem;
+}
+
+.penstuff p,
+.watchstuff p,
+.sunglassesstuff p{
+  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom:0.5rem;
+}
+.locationhours{
+  display: flex;
+  width:960px;
+  padding-bottom: 4rem;
+  justify-content: space-between;
+}
+.location,
+.hours{
+  width:35%;
+  text-align: left;
+
+}
+.location p,
+.hours p{
+  background-color: black;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+h4{
+  color: black;
+}
+.footer{
+  display: flex;
+  background-color: black;
+  height:5rem;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width:1024px){
+
+.penstuff,
+.watchstuff{
+  width: 47%;
+}
+.sunglassesstuff{
+  display: none;
+}
+.options{
+  display: none;
+}
+.menu{
+  display: flex;
+}
+}
+
+@media only screen and (max-width:470px){
+   .mainbanner{
+     height: 15rem;
+   }
+
+  .bannertitle{
+    width:100%;
+    padding-top: 1rem;
+    padding-left: 2rem;margin-top: 10rem;
+  }
+  .bannertitle h2{
+    font-size: .77rem;
+    font-weight: bold;
+    padding-bottom: .77rem;
+  }
+  .bannertitle h1{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .productgrid{
+    justify-content: center;
+    width: 90%;
+  }
+
+  .watchstuff{
+    display: none;
+  }
+  .penstuff{
+    width: 100%;
+  }
+
+  .locationhours{
+    display:inline-block;
+    width: 90%;
+    justify-content: center;
+  }
+  .location,
+  .hours{
+    width: 100%;
+  }
+
+  .footer h5{
+    text-align: center;
+    width: 100%;
+  }
+}
